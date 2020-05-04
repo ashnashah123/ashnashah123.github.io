@@ -1,1 +1,95 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/styles.css"
+        rel="stylesheet"/>
+    <link href="profile.style.client.css"
+        rel="stylesheet"/>
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-custom justify-content-between">
+
+        <div class="pos-f-t wbdv-field wbdv-hamburger">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <h4 class="text-white">Collapsed content</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+              </div>
+            </div>
+            <nav class="navbar navbar-light navbar-custom">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+        
+        <h1 class="col-sm-8 wbdv-label wbdv-course-manager navbar-brand navbar-custom container d-none d-lg-block">Course Manager</h1>
+        <form class="form-inline">
+            <div class="d-inline">
+                <input class="form-control mr-sm-2 wbdv-field wbdv-new-course" type="text" placeholder="New Course Title" aria-label="Search">
+                <button class="btn wbdv-button wbdv-add-course d-inline"> <i class="fas fa fa-plus"></i></button>
+            </div>
+        </form>
+      </nav>
+    <table class="table table-hover clickable-row">
+    <thead class="thead-custom">
+        <tr>
+        <th class="wbdv-header wbdv-title" scope="col">Course Title</th>
+        <th class="wbdv-header wbdv-owner" scope="col">Owned By</th>
+        <th class="wbdv-header wbdv-last-modified" scope="col">Last Modified</th>
+        <th>
+            <button class="btn wbdv-button wbdv-grid-layout"><i class="fas fa fa-th"></i></button>
+            <button class="btn wbdv-button wbdv-list-layout"><i class="fas fa fa-list"></i></button>
+            <button class="btn wbdv-header wbdv-sort"><i class="fas fa fa-sort"></i></button>
+        </th>
+    </thead>
+    <tbody>
+        <a href="course-editor/course-editor.template.client.html"><tr class="wbdv-row wbdv-course">
+            <td class="wbdv-row wbdv-title">
+                <i class="fad fa fa-sticky-note wbdv-row wbdv-icon"></i>
+                <a href="course-editor/course-editor.template.client.html">CS 4500 Software Development</a>        
+            </td>
+            <td class="wbdv-row wbdv-owner">Jan Vitek</td>
+            <td class="wbdv-row wbdv-modified-date">4:50pm</td>
+            <td><button class="btn wbdv-row wbdv-button wbdv-delete float-right"><i class="fas fa fa-times"></i></button></td>
+        </tr></a>
+        <tr class="wbdv-row wbdv-course">
+            <td class="wbdv-row wbdv-title">
+                <i class="fad fa fa-sticky-note wbdv-row wbdv-icon"></i>
+                <a href="course-editor/course-editor.template.client.html">CS 4550 Web Development</a>
+            </td>
+            <td class="wbdv-row wbdv-owner">Jose Annunziato</td>
+            <td class="wbdv-row wbdv-modified-date">Yesterday</td>
+            <td><button class="btn wbdv-row wbdv-button wbdv-delete float-right"><i class="fas fa fa-times"></i></button></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td class="wbdv-row wbdv-title">
+                <i class="fad fa fa-sticky-note wbdv-row wbdv-icon"></i>
+                <a href="course-editor/course-editor.template.client.html">ENGW 3302 Advanced Writing</a>
+            </td>
+            <td class="wbdv-row wbdv-owner">Isabel Campos</td>
+            <td class="wbdv-row wbdv-modified-date">1/14/20</td>
+            <td><button class="btn wbdv-row wbdv-button wbdv-delete float-right"><i class="fas fa fa-times"></i></button></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td class="wbdv-row wbdv-title">
+                <i class="fad fa fa-sticky-note wbdv-row wbdv-icon"></i>
+                <a href="course-editor/course-editor.template.client.html">HONR 3310 Cold War Spies</a>
+            </td>
+            <td class="wbdv-row wbdv-owner">Jeffrey Burds</td>
+            <td class="wbdv-row wbdv-modified-date">3/31/19</td>
+            <td><button class="btn wbdv-row wbdv-button wbdv-delete float-right"><i class="fas fa fa-times"></i></button></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</body>
+
+</html>
