@@ -14,7 +14,7 @@ const AboutComponent = () =>
 </section>
 
 <section>
-    <div>hi</div>
+    <div id="about-me">hi</div>
 </section>
 </div>
 export default AboutComponent

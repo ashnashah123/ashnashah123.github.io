@@ -3,10 +3,11 @@ import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { FaceDoodleComponent, ShinyTeethAndMeComponent, ChefComponent } from './doodleComponents';
 
 
 const TimelineComponent = () => 
- <div id="experience">
+ <div id="experiences">
     <VerticalTimeline>
     <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -14,10 +15,10 @@ const TimelineComponent = () =>
         contentArrowStyle={{ borderRight: '7px solid  #24305e' }}
         date="Aug 2020"
         iconStyle={{ background: '#f76767', color: '#fff' }}
-        // icon={<WorkIcon />}
+        icon={<FaceDoodleComponent/>}
     >
         <h3 className="vertical-timeline-element-title">Software Engineer at Drift.</h3>
-        <h5 className="vertical-timeline-element-subtitle">Boston, MA</h5>
+        <h5 className="vertical-timeline-element-subtitle">Boston, MA</h5>        
         <p>
             I am going to start my first full time job at Drift!! Super excited for the virus to go away and to get started :^)
         </p>
@@ -28,7 +29,7 @@ const TimelineComponent = () =>
         contentArrowStyle={{ borderRight: '7px solid  #24305e' }}
         date="June 2019 - Dec. 2019"
         iconStyle={{ background: '#f76767', color: '#fff' }}
-        // icon={<WorkIcon />}
+        icon={<ShinyTeethAndMeComponent/>}
     >
         <h3 className="vertical-timeline-element-title">Software Engineer Co-op at Intuit, Inc.</h3>
         <h5 className="vertical-timeline-element-subtitle">San Diego, CA</h5>
@@ -48,7 +49,7 @@ const TimelineComponent = () =>
         contentArrowStyle={{ borderRight: '7px solid  #24305e' }}
         date="June 2018 - Dec. 2018"
         iconStyle={{ background: '#f76767', color: '#fff' }}
-        // icon={<WorkIcon />}
+        icon={<ChefComponent/>}
     >
         <h3 className="vertical-timeline-element-title">Software Engineer Co-op at FluidScreen, Inc.</h3>
         <h5 className="vertical-timeline-element-subtitle">Boston, MA</h5>
