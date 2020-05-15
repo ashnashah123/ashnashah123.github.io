@@ -29,7 +29,7 @@ render() {
                     <br/>
                     <div class="row">
                     <div class="col-6">
-                        <img className="w-75 rounded" src={require('../images/paddys_ireland.jpg')} 
+                        <img className="w-100 rounded" src={require('../images/paddys_ireland.jpg')} 
                             style={{alignItems: 'center'}}></img>
                     </div>
                     <div class="col-6">
