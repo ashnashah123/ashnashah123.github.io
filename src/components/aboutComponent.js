@@ -20,11 +20,11 @@ render() {
             </div>
             </section>
 
-            <section>
-                <div class="container" id="about-me">
+            <section id="about-me">
+                <div class="container">
                     <br/>
                     <h2 style={{textAlign: 'center', color:'#24305e'}}>
-                        The Rundown
+                        The Rundown 🤸🏾‍♀️
                     </h2>
                     <br/>
                     <div class="row">
@@ -37,7 +37,7 @@ render() {
                         Hello! Thanks for visting my site 🎉 I am a software engineer and I recently graduated from Northeastern University 
                         with a Bachelors in Computer Science. My journey through tech has been nothing short of an incredible learning experience
                         riddled with adventures across the country, abroad, and in Boston itself. I love learning new things and while I find myself
-                        most comfortable with full stack development, I am always eager to explore new areas of CS and get people excited about the field :^)
+                        most comfortable with full stack development, I am always eager to explore new areas of CS and get people excited about the field 🤩
                         </p>
                         {
                             !this.state.translateToEnglish &&
