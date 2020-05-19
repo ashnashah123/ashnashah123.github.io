@@ -2,6 +2,7 @@ import React from "react";
 import NavBarComponent from "../components/navBarComponent";
 import AboutComponent from "../components/aboutComponent";
 import TimelineComponent from "../components/timelineComponent";
+import JeopardyComponent from "../components/jeopardyComponent";
 
 class PersonalWebsiteContainer extends React.Component {
 
@@ -11,6 +12,7 @@ class PersonalWebsiteContainer extends React.Component {
             <NavBarComponent/>
             <AboutComponent/>
             <TimelineComponent/>
+            <JeopardyComponent/>
         </div>
         )
     }
