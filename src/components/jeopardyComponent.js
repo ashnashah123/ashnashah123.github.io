@@ -1,4 +1,5 @@
 import React from "react";
+import AboutModals from "./aboutCategoryModals";
 
 class JeopardyComponent extends React.Component {
 
@@ -14,11 +15,11 @@ category_names = ["Early Life", "Experiences", "Hobbies", "Fast Facts", "Skills"
 render() {
     return (
         <div>
-        <h2 class="text-center">Answer: Who is Ashna Shah?</h2>
-        <div class="row">
+            <h2 class="text-center">Answer: Who is Ashna Shah?</h2>
+            <div class="row">
                 {this.category_nums.map(cat_num => 
                         
-                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8"}}>
+                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", borderStyle: 'rounded', borderWidth: 'thick'}}>
                                 <div class="card-body">
                                     
                                     <h5 class="card-text" style={{color: "#FFFFFF", textAlign: 'center', verticalAlign: 'center', fontSize: "25px"}}>{this.category_names[cat_num]}</h5>
@@ -28,21 +29,25 @@ render() {
                 }
             </div>
             <div class="row">
-                {this.category_nums.map(cat_num => 
-                        
-                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8"}}>
+                {this.category_nums.map(cat_num =>
+                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", borderStyle: 'rounded', borderWidth: 'thick'}}>
                                 <div class="card-body">
-                                    
-                                    <h5 class="card-title" style={{color: "#FFCC00", textAlign: 'center', verticalAlign: 'center', fontSize: "50px"}}>{this.two_hundred}</h5>
+                                    <AboutModals key={cat_num}
+                                        points={this.two_hundred}
+                                        category_num={cat_num}
+                                    />
                                 </div>
                             </div>
                     )
                 }
             </div>
+
+
+
             <div class="row">
                 {this.category_nums.map(cat_num => 
                         
-                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large'}}>
+                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large', borderStyle: 'rounded', borderWidth: 'thick'}}>
                                 <div class="card-body">
                                     
                                     <h5 class="card-title">{this.four_hundred}</h5>
@@ -54,7 +59,7 @@ render() {
             <div class="row">
                 {this.category_nums.map(cat_num => 
                         
-                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large'}}>
+                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large', borderStyle: 'rounded', borderWidth: 'thick'}}>
                                 <div class="card-body">
                                     
                                     <h5 class="card-title">{this.six_hundred}</h5>
@@ -66,7 +71,7 @@ render() {
             <div class="row">
                 {this.category_nums.map(cat_num => 
                         
-                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large'}}>
+                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large', borderStyle: 'rounded', borderWidth: 'thick'}}>
                                 <div class="card-body">
                                     
                                     <h5 class="card-title">{this.eight_hundred}</h5>
@@ -78,7 +83,7 @@ render() {
             <div class="row">
                 {this.category_nums.map(cat_num => 
                         
-                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large'}}>
+                            <div class="card col-2" style={{width: '12rem', height: '8rem', backgroundColor: "#0018a8", color: "#FFCC00", textAlign: 'center', fontSize: 'large', borderStyle: 'rounded', borderWidth: 'thick'}}>
                                 <div class="card-body">
                                     
                                     <h5 class="card-title">{this.one_thousand}</h5>
