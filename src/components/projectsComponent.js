@@ -20,14 +20,15 @@ class ProjectsComponent extends React.Component {
                 'shortDescription': 'A travel website created as the final project for CS 4550 (Web Development)',
                 'language': 'Java/JPA/Spring, SQL, React/HTML/CSS',
                 'takeaways': 'I worked in a group to create the site and it helped me strengthen my skills in full stack web development! I worked more on the frontend but helped with backend design. The site may be helpful after the virus clears out to plan a trip!',
-                'url': 'https://wbdv-sp20-eventsnobs.herokuapp.com/'
+                'url': 'https://wbdv-sp20-eventsnobs.herokuapp.com/',
+                'imageUrl': '../images/event_snobs_logo.png'
             },
             {
                 'title': 'bikinginboston',
                 'date': 'Spring 2019',
                 'shortDescription': 'A data visualization project for INSH 2102 (Bostonography) looking at biking accidents in Boston with the aim of improving the biker experience in the city',
                 'language': 'R, Leaflet JS',
-                'takeaways': 'I frequently bike around Boston, so this project made me excited to explore where accidents occur (many of the results did not surprise me) and it made me excited to brainstorm solutions. I also gained experience with datavisualizations and found myself enjoying it a lot more than I initially thought I would. Once I got past the initial learning curve of understanding how data comes in and how it can be manipulated, I was eager to make more visualizations.',
+                'takeaways': 'I frequently bike around Boston, so this project made me excited to explore where accidents occur and it made me excited to brainstorm solutions. I also gained experience with datavisualizations and found myself enjoying it a lot more than I initially thought I would. Once I got past the initial learning curve of understanding how data comes in and how it can be manipulated, I was eager to make more visualizations!',
                 'url': 'https://bikinginboston.github.io/'
             },
             {
@@ -53,7 +54,7 @@ class ProjectsComponent extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="projects">
                 <h1 style={{'textAlign': 'center',  color:'#24305e'}}>Projects</h1>
                 <h6 style={{'textAlign': 'center',  color:'#24305e'}}>Click on the title of a project to view it!</h6>
                 <div className="row">

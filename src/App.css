@@ -68,6 +68,12 @@ color: darkslategrey;
 	background-repeat: no-repeat;
 }
 
+#projects {
+  background: url(./images/cliffs_of_moher.jpeg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .cover {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0.66) 17%, rgba(0, 0, 0, 0.55) 35%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.3) 100%);
 	padding: 60px;
