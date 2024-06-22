@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title:  "Implementing a retry mechanism for notifications"
 permalink: /notifications-retry/
 ---
